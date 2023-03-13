@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Daniel Hidalgo" />
+  <meta name="description" content="Lesson 7 - CSS Transformations" />
+  <meta name="keywords" content="CSS, CSS animations, CSS transformations cheatsheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/lsn7-styles.min.css" />
+  <title>Lesson 7 Project</title>
+</head>
+
+<body>
+  <header>
+    <h1>Lesson 7 Project</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+          <ul class="child-links">
+            <li><a href="index.html#my-reflections">My Reflections</a></li>
+            <li><a href="index.html#my-next-steps">My Next Steps</a></li>
+          </ul>
+        </li>
+        <li class="active">
+          <a href="transformation-cheatsheet.html">Transformation Cheatsheet</a>
+          <ul class="child-links">
+            <li><a href="transformation-cheatsheet.html#">Terminology</a></li>
+            <li>
+              <a href="transformation-cheatsheet.html#">Transform Properties</a>
+            </li>
+            <li>
+              <a href="transformation-cheatsheet.html#">Transition Properties</a>
+            </li>
+            <li>
+              <a href="transformation-cheatsheet.html#">Animation Properties</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Terminology</h2>
+      <dl>
+        <div>
+          <dt>
+            <h3>Animations</h3>
+          </dt>
+          <dd>CSS allows animation of HTML elements without using JavaScript or Flash.
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Keyframes</h3>
+          </dt>
+          <dd><code>@keyframes</code> controls the intermediate steps in a CSS animation sequence by defining styles for
+            keyframes.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Transforms</h3>
+          </dt>
+          <dd>The <code>transform</code> property applies a 2D or 3D transformation to an element. This property allows
+            you to rotate, scale, move, etc., elements.
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Transitions</h3>
+          </dt>
+          <dd>The <code>transition</code> property allows us to change property values smoothly, over a given duration.
+          </dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Easing</h3>
+          </dt>
+          <dd>Easing is the way a transition effects moves.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Rotation</h3>
+          </dt>
+          <dd>With the <code>transform</code> property we can rotate elements.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Scale</h3>
+          </dt>
+          <dd>With the <code>transform</code> property we can scale elements.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Skew</h3>
+          </dt>
+          <dd>With the <code>transform</code> property we can scale elements.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Delay</h3>
+          </dt>
+          <dd>We can control when a transition effect will start with <code>transition-delay</code>.</dd>
+        </div>
+        <div>
+          <dt>
+            <h3>Transition Timing</h3>
+          </dt>
+          <dd>The <code>transition-timing-function</code> specifies the speed curve of the transition effect.</dd>
+        </div>
+      </dl>
+    </section>
+    <section>
+      <h2>Transform Properties</h2>
+      <div class="code-card-container">
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Transition Properties</h2>
+      <div class="code-card-container">
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Animation Properties</h2>
+      <div class="code-card-container">
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+        <div class="example-code-card">
+          <h3>Example Code</h3>
+          <p><span>scale()</span> affects the size of the element.
+          </p>
+          <code>transform: scale(1, 1.5);</code>
+          <div class="preview-scale">
+            <p>Scale</p>
+            <p>Scale</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
