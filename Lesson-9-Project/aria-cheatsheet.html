@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Hidalgo" />
+  <meta name="description" content="Lesson 8 - Aria" />
+  <meta name="keywords" content="Aria, Accessibility, Aria cheatsheet" />
+  <link rel="stylesheet" href="css/lsn9-styles.min.css">
+  <title>Lesson 9 Project</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="aria-cheatsheet.html">Cheatsheet</a>
+    <a href="https://github.com/rsc-cis233da-in-v8/19874_lesson-9-practice-activities-jidalgo11"
+      target="_blank">Practice Activities</a>
+  </nav>
+  <div>
+    <header>
+      <h1>Lesson 9 Project</h1>
+    </header>
+    <main>
+      <h2>ARIA and Accessibility</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dolore praesentium. Iste alias possimus
+        reiciendis culpa, impedit sunt in temporibus soluta repudiandae laboriosam ducimus eaque quisquam, corrupti
+        facere
+        at consequuntur.</p>
+      <div class="tab-menu" role="tablist">
+        <ul class="tab-list" tabindex="-1" role="none">
+          <li><button class="tab" id="tab1" aria-selected="true" role="tab"
+              onclick="changeTab(event, 'content1')">Roles</button></li>
+          <li><button class="tab" id="tab2" aria-selected="false" role="tab"
+              onclick="changeTab(event, 'content2')">Properties</button></li>
+          <li><button class="tab" id="tab3" aria-selected="false" role="tab"
+              onclick="changeTab(event, 'content3')">States</button></li>
+        </ul>
+        <div id="content1" class="tab-content" tabindex="0" style="display: block;" role="tabpanel">Lorem ipsum dolor
+          sit
+          amet consectetur
+          adipisicing elit. Error
+          dolorum quos distinctio accusantium, totam molestias ex consectetur sint, porro molestiae expedita vitae hic
+          minima corporis mollitia reprehenderit numquam ab consequatur.</div>
+        <div id="content2" class="tab-content" tabindex="0" style="display: none;" role="tabpanel">Lorem ipsum dolor sit
+          amet consectetur
+          adipisicing elit.
+          Quisquam sequi omnis corporis voluptas, molestias illo repellendus accusantium facere corrupti sit eos,
+          veritatis molestiae numquam eius magni libero dignissimos totam sapiente.</div>
+        <div id="content3" class="tab-content" tabindex="0" style="display: none;" role="tabpanel">Lorem ipsum dolor sit
+          amet consectetur
+          adipisicing elit. Eaque
+          eius iste temporibus. Eius adipisci molestiae sunt asperiores accusantium? Nihil quo voluptate ducimus quis
+          possimus rerum cumque, alias impedit amet assumenda.</div>
+      </div>
+    </main>
+    <footer>
+      <p>Daniel Hidalgo</p>
+      <p>Github: @jidalgo11</p>
+      <p>2-20-2023</p>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
