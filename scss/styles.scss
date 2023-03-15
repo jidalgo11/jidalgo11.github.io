@@ -29,13 +29,12 @@ main {
       display: flex;
       gap: 25px 25px;
       flex-wrap: wrap;
-      justify-content: space-between;
       .project {
         border: 1px #333 solid;
         border-radius: 5px;
         border-top: 5px steelblue solid;
         padding: 35px 25px;
-        width: 45%;
+        width: 20%;
       }
     }
   }
