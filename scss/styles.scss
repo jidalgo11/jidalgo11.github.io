@@ -1,11 +1,42 @@
 body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 15px;
   a {
     text-decoration: none;
+  }
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  section {
+    .projects {
+      display: flex;
+      gap: 25px 25px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .project {
+        border: 1px #333 solid;
+        border-radius: 5px;
+        border-top: 5px steelblue solid;
+        padding: 35px 25px;
+        width: 45%;
+      }
+    }
   }
 }
