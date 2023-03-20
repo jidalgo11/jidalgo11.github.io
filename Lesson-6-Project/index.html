@@ -54,10 +54,21 @@
       </div>
     </section>
     <section>
-      <form action="" method="post">
-        <input type="text"><input type="text"><input type="text">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="Submit">
+      <form action="index.html" method="post">
+        <legend>Contact Us</legend>
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="field-group">
+          <label for="textarea">Comments</label>
+          <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
